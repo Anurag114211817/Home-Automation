@@ -1,0 +1,38 @@
+body {
+    background: url("../images/img.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+body #main {
+    background-color: #ffffff20;
+}
+
+body #div1, body #div2, body #div3, body #div4, body #div5, body #div6, body #div7, body #div8, body #div9 {
+    padding: 0;
+    margin: 5px -5px;
+    min-height: 190px;
+    background: #ffffff20;
+}
+
+body #div7 img, body #div8 img, body #div9 img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 63%;
+}
+
+body #div1 {
+    min-height: 390px;
+}
+
+@media screen and (min-width: 768px) {
+    body #main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+}
+/*# sourceMappingURL=style.css.map */
