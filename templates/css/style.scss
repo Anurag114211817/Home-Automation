@@ -1,4 +1,81 @@
+// global variable
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
 $col1 : #ffffff20;
+$col2 : #ffffff30;
+$col3 : #ffffff;
+$col4 : #ffffff99;
+// login page style
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+body{
+    #h1{
+        position: relative;
+        top: -2vh;
+        background: $col2;
+        line-height: 60px;
+    }
+    #form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        min-height: 200px;
+        width: 30%;
+        background-color: $col2;
+        #email, #pass, #btn{
+            position: relative;
+            top: 20px;
+            margin: 10px;
+            
+            input{
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $col3;
+                color: $col3;
+                &::placeholder{
+                    color: $col4;
+                }
+            }
+        }
+        #btn{
+            top: 17%;
+            left: 45%;
+            width: 30%;
+            transform: translateX(-50%);
+            input{
+                width: 100%;
+                color: #000;
+                background: linear-gradient(145deg, $col2 45%, $col3 50%, $col4 55%);
+                background-size: 300%;
+                border-radius: 20px;
+                transition: .7s;
+            }:hover{
+                background-position: right;
+            }
+        }
+        @media (max-width: 991px) {
+            &{
+                width: 50%;
+            }
+        }
+        @media (max-width: 767px) {
+            &{
+                width: 70%;
+            }
+        }
+        @media (max-width: 321px) {
+            &{
+                margin-top: 5vh;
+            }
+        }
+    }
+}
+// home page style
 body{
     background: url("../images/img.jpg") no-repeat fixed center;
     background-size: cover;
@@ -37,7 +114,7 @@ body{
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -48%);
+            transform: translate(-50%, -40%);
         }
     }
 }

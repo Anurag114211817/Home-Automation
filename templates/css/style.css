@@ -1,3 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+}
+
+body #h1 {
+  position: relative;
+  top: -2vh;
+  background: #ffffff30;
+  line-height: 60px;
+}
+
+body #form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-height: 200px;
+  width: 30%;
+  background-color: #ffffff30;
+}
+
+body #form #email, body #form #pass, body #form #btn {
+  position: relative;
+  top: 20px;
+  margin: 10px;
+}
+
+body #form #email input, body #form #pass input, body #form #btn input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+body #form #email input::-webkit-input-placeholder, body #form #pass input::-webkit-input-placeholder, body #form #btn input::-webkit-input-placeholder {
+  color: #ffffff99;
+}
+
+body #form #email input:-ms-input-placeholder, body #form #pass input:-ms-input-placeholder, body #form #btn input:-ms-input-placeholder {
+  color: #ffffff99;
+}
+
+body #form #email input::-ms-input-placeholder, body #form #pass input::-ms-input-placeholder, body #form #btn input::-ms-input-placeholder {
+  color: #ffffff99;
+}
+
+body #form #email input::placeholder, body #form #pass input::placeholder, body #form #btn input::placeholder {
+  color: #ffffff99;
+}
+
+body #form #btn {
+  top: 17%;
+  left: 45%;
+  width: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body #form #btn input {
+  width: 100%;
+  color: #000;
+  background: linear-gradient(145deg, #ffffff30 45%, #ffffff 50%, #ffffff99 55%);
+  background-size: 300%;
+  border-radius: 20px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+body #form #btn :hover {
+  background-position: right;
+}
+
+@media (max-width: 991px) {
+  body #form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  body #form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 321px) {
+  body #form {
+    margin-top: 5vh;
+  }
+}
+
 body {
   background: url("../images/img.jpg") no-repeat fixed center;
   background-size: cover;
@@ -44,8 +138,8 @@ body #div1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -48%);
-            transform: translate(-50%, -48%);
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
   }
 }
 /*# sourceMappingURL=style.css.map */
