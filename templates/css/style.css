@@ -12,6 +12,12 @@ body #h1 {
   line-height: 60px;
 }
 
+@media (max-width: 500px) {
+  body #h1 {
+    line-height: 45px;
+  }
+}
+
 body #form {
   position: absolute;
   top: 50%;
@@ -36,19 +42,19 @@ body #form #email input, body #form #pass input, body #form #btn input {
   color: #ffffff;
 }
 
-body #form #email input::-webkit-input-placeholder, body #form #pass input::-webkit-input-placeholder, body #form #btn input::-webkit-input-placeholder {
+body #form #email ::-webkit-input-placeholder, body #form #pass ::-webkit-input-placeholder, body #form #btn ::-webkit-input-placeholder {
   color: #ffffff99;
 }
 
-body #form #email input:-ms-input-placeholder, body #form #pass input:-ms-input-placeholder, body #form #btn input:-ms-input-placeholder {
+body #form #email :-ms-input-placeholder, body #form #pass :-ms-input-placeholder, body #form #btn :-ms-input-placeholder {
   color: #ffffff99;
 }
 
-body #form #email input::-ms-input-placeholder, body #form #pass input::-ms-input-placeholder, body #form #btn input::-ms-input-placeholder {
+body #form #email ::-ms-input-placeholder, body #form #pass ::-ms-input-placeholder, body #form #btn ::-ms-input-placeholder {
   color: #ffffff99;
 }
 
-body #form #email input::placeholder, body #form #pass input::placeholder, body #form #btn input::placeholder {
+body #form #email ::placeholder, body #form #pass ::placeholder, body #form #btn ::placeholder {
   color: #ffffff99;
 }
 
@@ -101,7 +107,7 @@ body {
 body .h1, body .h4 {
   color: #ffffff;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 45px;
 }
 
 body .h4 {
@@ -140,6 +146,36 @@ body #div1 {
     left: 50%;
     -webkit-transform: translate(-50%, -40%);
             transform: translate(-50%, -40%);
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    background-position: left;
+  }
+}
+
+body #h1, body .h1, body .h4 {
+  letter-spacing: 2px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+          animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #ffffff1f,  0 0 2px #ffffff2f,  0 0 3px #ffffff3f,  0 0 4px #ffffff4f,  0 0 5px #ffffff5f,  0 0 6px #ffffff6f,  0 0 7px #ffffff7f;
+  }
+  to {
+    text-shadow: 0 0 10px #ffffff1f,  0 0 20px #ffffff2f,  0 0 30px #ffffff3f,  0 0 40px #ffffff4f,  0 0 50px #ffffff5f,  0 0 60px #ffffff6f,  0 0 70px #ffffff7f;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #ffffff1f,  0 0 2px #ffffff2f,  0 0 3px #ffffff3f,  0 0 4px #ffffff4f,  0 0 5px #ffffff5f,  0 0 6px #ffffff6f,  0 0 7px #ffffff7f;
+  }
+  to {
+    text-shadow: 0 0 10px #ffffff1f,  0 0 20px #ffffff2f,  0 0 30px #ffffff3f,  0 0 40px #ffffff4f,  0 0 50px #ffffff5f,  0 0 60px #ffffff6f,  0 0 70px #ffffff7f;
   }
 }
 /*# sourceMappingURL=style.css.map */
