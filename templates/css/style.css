@@ -137,6 +137,73 @@ body #div7 img, body #div8 img, body #div9 img {
 
 body #div1 {
   min-height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #div1 .mask {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 12.5rem;
+  height: 6.25rem;
+  margin: 1.25rem;
+}
+
+body #div1 .semi-circle {
+  position: relative;
+  display: block;
+  width: 12.5rem;
+  height: 6.25rem;
+  background: -webkit-gradient(linear, left top, right top, from(#c0392b), color-stop(50%, #f1c40f), to(#1abc9c));
+  background: linear-gradient(to right, #c0392b 0%, #f1c40f 50%, #1abc9c 100%);
+  border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+}
+
+body #div1 .semi-circle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  width: 8.75rem;
+  height: 4.375rem;
+  margin-left: -4.375rem;
+  background: #ffffff;
+  border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+}
+
+body #div1 .semi-circle--mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12.5rem;
+  height: 12.5rem;
+  background: transparent;
+  -webkit-transform: rotate(90deg) translate3d(0, 0, 0);
+          transform: rotate(90deg) translate3d(0, 0, 0);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body #div1 .semi-circle--mask::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 12.625rem;
+  height: 6.375rem;
+  margin: -1px 0 0 -1px;
+  background: #f2f2f2;
+  border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
 }
 
 @media (min-width: 992px) {
