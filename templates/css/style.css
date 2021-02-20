@@ -230,19 +230,43 @@ body #h1, body .h1, body .h4 {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 1px #ffffff1f,  0 0 2px #ffffff2f,  0 0 3px #ffffff3f,  0 0 4px #ffffff4f,  0 0 5px #ffffff5f,  0 0 6px #ffffff6f,  0 0 7px #ffffff7f;
+    text-shadow: 0 0 1px #ffffff1f, 
+ 0 0 2px #ffffff2f, 
+ 0 0 3px #ffffff3f, 
+ 0 0 4px #ffffff4f, 
+ 0 0 5px #ffffff5f, 
+ 0 0 6px #ffffff6f, 
+ 0 0 7px #ffffff7f;
   }
   to {
-    text-shadow: 0 0 10px #ffffff1f,  0 0 20px #ffffff2f,  0 0 30px #ffffff3f,  0 0 40px #ffffff4f,  0 0 50px #ffffff5f,  0 0 60px #ffffff6f,  0 0 70px #ffffff7f;
+    text-shadow: 0 0 10px #ffffff1f, 
+ 0 0 20px #ffffff2f, 
+ 0 0 30px #ffffff3f, 
+ 0 0 40px #ffffff4f, 
+ 0 0 50px #ffffff5f, 
+ 0 0 60px #ffffff6f, 
+ 0 0 70px #ffffff7f;
   }
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 1px #ffffff1f,  0 0 2px #ffffff2f,  0 0 3px #ffffff3f,  0 0 4px #ffffff4f,  0 0 5px #ffffff5f,  0 0 6px #ffffff6f,  0 0 7px #ffffff7f;
+    text-shadow: 0 0 1px #ffffff1f, 
+ 0 0 2px #ffffff2f, 
+ 0 0 3px #ffffff3f, 
+ 0 0 4px #ffffff4f, 
+ 0 0 5px #ffffff5f, 
+ 0 0 6px #ffffff6f, 
+ 0 0 7px #ffffff7f;
   }
   to {
-    text-shadow: 0 0 10px #ffffff1f,  0 0 20px #ffffff2f,  0 0 30px #ffffff3f,  0 0 40px #ffffff4f,  0 0 50px #ffffff5f,  0 0 60px #ffffff6f,  0 0 70px #ffffff7f;
+    text-shadow: 0 0 10px #ffffff1f, 
+ 0 0 20px #ffffff2f, 
+ 0 0 30px #ffffff3f, 
+ 0 0 40px #ffffff4f, 
+ 0 0 50px #ffffff5f, 
+ 0 0 60px #ffffff6f, 
+ 0 0 70px #ffffff7f;
   }
 }
 /*# sourceMappingURL=style.css.map */
