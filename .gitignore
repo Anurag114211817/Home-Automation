@@ -2,3 +2,4 @@ __pycache__/
 *.map
 *.pyc
 *.scss
+push.py
